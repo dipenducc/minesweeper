@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>Minesweeper</title>
+  <link rel="stylesheet" href="style.css"></link>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <form  for="level">CHOICE:
+  <select id="mySelect" name="level" onchange="Func()"> 
+    <option value="easy" id="easy">EASY</option>
+    <option value="medium" id="medium" selected>MEDIUM</option>
+    <option value="hard" id="hard">HARD</option>
+  </select>
+  </form>
+
+  <div class="container">
+    <div><span id="flag"></span> : <span id='flags-left'></span></div>
+    <div id = "grid" class="grid"></div>
+    <div id="result"></div>
+    <div><span id="count"></span></div>
+    <button id="reset" onclick="window.location.reload();">Restart</button>
+    <div id="result"></div>
+  </div>
+  <script src="ui.js"></script>
+</body>
+</html>
