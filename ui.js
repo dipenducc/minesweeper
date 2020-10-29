@@ -7,7 +7,7 @@ let grid = document.getElementById('grid');
 function Func() {
     var x = document.getElementById("mySelect");
     let display = x.options[x.selectedIndex].text;
-    class gride {
+    class Grid {
         constructor(width, bombAmount){
             this.width = width;
             this.bombAmount = bombAmount; 
@@ -19,7 +19,7 @@ function Func() {
             grid.style.setProperty('--setWidth',this.width*40 +'px')
         }
     }
-    let obj = new gride(level[display].width, level[display].bombAmount)
+    let obj = new Grid(level[display].width, level[display].bombAmount)
     obj.run();
     obj.display();
 }
